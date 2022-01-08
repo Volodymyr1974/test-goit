@@ -18,30 +18,33 @@
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
-        <div class="container box ">
-            <nav class="header-nav">
-                <a href="./index.html" class="logo">
-                Web<span class="end">Studio</span>
+        <div class=" page-header__box  container">
+            <nav class="page-header__nav">
+                <a href="./index.html" class="logo page-header__logo">
+                Web<span class="logo__end">Studio</span>
             </a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link  color-effect">Студия</a> </li>
-                    <li class="item"><a href="./portfolio.html" class="link  color-effect current">Портфолио</a> </li>
-                    <li class="item"><a href="./index.html" class="link color-effect">Контакты</a> </li>
+                <ul class="site-nav ">
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="site-nav__link     color-effect">Студия</a> </li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="site-nav__link  site-nav__link--current color-effect">Портфолио</a> </li>
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="site-nav__link  color-effect">Контакты</a> </li>
                 </ul>
             </nav>
 
             <ul class="contacts ">
-                <li class="item">
-                    <a class="link color-effect" href="mailto:info@devstudio.com">
-                        <svg class="mail" width='16' height='12'>
+                <li class="contacts__item">
+                    <a class="contacts__link color-effect" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon " width='16' height='12'>
                                <use href='./images/sprite.svg#envelope'></use>
                             </svg>info@devstudio.com</a>
 
                 </li>
 
-                <li class="item">
-                    <a class="link color-effect" href="tel:+380961111111">
-                        <svg class="phone" width='10' height='16'>
+                <li class="contacts__item">
+                    <a class="contacts__link  color-effect" href="tel:+380961111111">
+                        <svg class="contacts__icon " width='10' height='16'>
                                <use href='./images/sprite.svg#smartphone'></use>
                             </svg> +38 096 111 11 11</a>
                 </li>
@@ -198,49 +201,51 @@
     </main>
     <!-- Футер -->
     <footer class="footer">
-        <div class="container footer-box">
-            <div class="address-box">
-                <a href="./index.html" class="logo">
-                Web<span class="text end">Studio</span>
+        <div class=" footer__box container">
+            <div class="footer__contacts ">
+                <a href="./index.html" class="logo footer__logo">
+                Web<span class="logo__end logo__end--inverse ">Studio</span>
         </a>
                 <address class="address">
-          <p class="text"> Киев, пр-т Леси Украинки, 26</p>
-          <ul class="address-list list">
-            <li class="item"> <a href="mailto:info@devstudio.com" class="link color-effect">info@devstudio.com</a> </li>
-            <li class="item"> <a href="tel:+380961111111" class="link color-effect">+38 096 111 11 11</a> </li>
+          <p class="address__text"> Киев, пр-т Леси Украинки, 26</p>
+          <ul class="address__list ">
+            <li class="address__item"> 
+                <a href="mailto:info@devstudio.com" class="address__link  color-effect">info@devstudio.com</a> </li>
+            <li class="address__item">
+                 <a href="tel:+380961111111" class="address__link color-effect ">+38 096 111 11 11</a> </li>
             </ul>
                 </address>
             </div>
-            <div class="social-networks">
-                <h2 class="join">присоединяйтесь</h2>
-                <ul class="social-links">
-                    <Li class="items">
-                        <a class="social-icon ftr" href="#">
-                            <svg class="icon" width='20' height='20'>
+            <div class="action">
+                <h2 class="action__text ">присоединяйтесь</h2>
+                <ul class="socials">
+                    <Li class="socials__items">
+                        <a class="socials__link footer__socials" href="#">
+                            <svg width='20' height='20'>
                                             <use href='./images/sprite.svg#instagram'></use>
                                         </svg>
 
                         </a>
                     </Li>
-                    <Li class="items">
-                        <a class="social-icon ftr" href="#">
-                            <svg class="icon" width='20' height='20'>
+                    <Li class="socials__items">
+                        <a class="socials__link footer__socials" href="#">
+                            <svg width='20' height='20'>
                                             <use href='./images/sprite.svg#twitter'></use>
                                         </svg>
 
                         </a>
                     </Li>
-                    <Li class="items">
-                        <a class="social-icon ftr" href="#">
-                            <svg class="icon" width='20' height='20'>
+                    <Li class="socials__items">
+                        <a class="socials__link footer__socials" href="#">
+                            <svg width='20' height='20'>
                                             <use href='./images/sprite.svg#facebook'></use>
                                         </svg>
 
                         </a>
                     </Li>
-                    <Li class="items">
-                        <a class="social-icon ftr" href="#">
-                            <svg class="icon" width='20' height='20'>
+                    <Li class="socials__items">
+                        <a class="socials__link footer__socials" href="#">
+                            <svg width='20' height='20'>
                                             <use href='./images/sprite.svg#linkedin'></use>
                                         </svg>
 
@@ -252,14 +257,14 @@
 
             </div>
             <div class="subscription">
-                <h2 class="join">Подпишитесь на рассылку</h2>
-                <form class="ftr-form" autocomplete="off">
-                    <label class="ftr-email" for="email">
-                        <input class="input-email" type="email" name="email" placeholder="E-mail">
+                <h2 class="subscription__title ">Подпишитесь на рассылку</h2>
+                <form class="footer-form" autocomplete="off">
+                    <label class="footer-form__label" for="email">
+                        <input class="footer-form__input" type="email" name="email" placeholder="E-mail">
                     </label>
-                    <button class="btn-email" type="submit">
-                        <span class="btn-text">Подписаться</span>
-                        <svg class="btn-icon" width='24' height='24'>
+                    <button class="footer-form__btn" type="submit">
+                        <span >Подписаться</span>
+                        <svg class="footer-form__icon" width='24' height='24'>
                                             <use href='./images/icons.svg#iconsend'></use>
                                         </svg>
                     </button>
